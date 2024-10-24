@@ -11,9 +11,11 @@
 $i=7; 
 $kiekis=0; 
 
+//ciklas pakartojantis veiksmus kol iteracijos pradeda kartotis ty. 1
 while ($i!=1) {
     echo "$i <br>"; 
     
+//tikriname ar skaicius lyginis ar ne    
     if ($i%2==0) {
         $i=$i/2;
     } 
@@ -21,10 +23,10 @@ while ($i!=1) {
     else {
         $i=($i*3)+1; 
     }
-    
+   //skaicuojame iteracijas 
     $kiekis++;
 }
-
+//isvedami atsakymai
 echo "Paskutinė reikšmė: $i <br>"; 
 echo "Iš viso iteracijų: $kiekis"; 
 
