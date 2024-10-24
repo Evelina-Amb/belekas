@@ -8,8 +8,8 @@
    
 <?php
 
-$i=7; 
-$kiekis=0; 
+$i=10; 
+$kiekis=0; //Iteracijų skaičius
 
 //ciklas pakartojantis veiksmus kol iteracijos pradeda kartotis ty. 1
 while ($i!=1) {
@@ -17,16 +17,16 @@ while ($i!=1) {
     
 //tikriname ar skaicius lyginis ar ne    
     if ($i%2==0) {
-        $i=$i/2;
+        $i=$i/2; //Jei lyginis, daliname iš 2
     } 
     
     else {
-        $i=($i*3)+1; 
+        $i=($i*3)+1; //Jei nelyginis, dauginame iš 3 ir pridedame 1
     }
    //skaicuojame iteracijas 
     $kiekis++;
 }
-//isvedami atsakymai
+// Išvedame galutinį rezultatą
 echo "Paskutinė reikšmė: $i <br>"; 
 echo "Iš viso iteracijų: $kiekis"; 
 
